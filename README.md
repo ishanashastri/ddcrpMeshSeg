@@ -22,6 +22,8 @@ http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/
 
 2) David Gleich's MATLAB interface to the Boost Graph Library:
 http://www.cs.purdue.edu/homes/dgleich/packages/matlab_bgl/
+**Updated link:**
+https://github.com/ishanashastri/matlab-bgl
 
 3) Meshes: This package includes a subset of the TOSCA meshes. More can be found at:
 http://tosca.cs.technion.ac.il/book/resources_data.html

@@ -25,8 +25,8 @@ NOISESCALE = 9e-04;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%% Setup paths %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Pathtolightspeed = '#### TODO: POINT TO LIGHTSPEED TOOLBOX #####';
-Pathtomatlab_bgl = '#### TODO: POINT TO MATLAB_BGL TOOLBOX #####';
+Pathtolightspeed = %#### TODO: POINT TO LIGHTSPEED TOOLBOX #####%
+Pathtomatlab_bgl = %#### TODO: POINT TO MATLAB_BGL TOOLBOX #####'
 addpath(genpath('.'));
 addpath(genpath(Pathtolightspeed));
 addpath(genpath(Pathtomatlab_bgl));
@@ -111,8 +111,8 @@ ll_c = NaN(1,NUMITER);
 ll = NaN(1,NUMITER);
 prior = NaN(1,NUMITER);
 for i = 1:NUMITER
-    [ll_c(i) ll(i) prior(i)] = trace_plot(i,mniw,data,converged_sampler_state,ddcrp.d2_mat);
-end;
+    [ll_c(i), ll(i), prior(i)] = trace_plot(i,mniw,data,converged_sampler_state,ddcrp.d2_mat);
+end
 figure(3);plot(ll_c,'r*-');title('joint log-lik')
 [~,MAP_SAMPLE] = max(ll_c);
 
